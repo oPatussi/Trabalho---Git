@@ -21,7 +21,14 @@ public class Main {
                     pessoaController.ListAll(pessoas);
                 }
                 case 2 ->{
-                    pessoaController.AddPerson()
+                    String nome = userInteract.AwaitPersonName(scanner);
+                    int idade = userInteract.AwaitPersonAge(scanner);
+                    pessoas.add(pessoaController.AddPerson(nome,idade));
+                }
+                case 3->{
+                    pessoaController.ListAll(pessoas);
+                    int idPerson = userInteract.AwaitPersonToDelete(scanner);
+                    pessoaController.RemovePerson(pessoas,idPerson);
                 }
 
             }
