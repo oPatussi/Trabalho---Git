@@ -7,4 +7,9 @@ public class PessoaController {
             System.out.println("Nome: "+pessoa.nome+" | Idade: "+pessoa.idade);
         }
     }
+
+    public Pessoa AddPerson(String nome, int idade){
+        return new Pessoa(nome, idade);
+    }
+
 }

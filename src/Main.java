@@ -20,6 +20,9 @@ public class Main {
                 case 1 ->{
                     pessoaController.ListAll(pessoas);
                 }
+                case 2 ->{
+                    pessoaController.AddPerson()
+                }
 
             }
         }
