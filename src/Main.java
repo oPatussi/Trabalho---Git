@@ -30,6 +30,12 @@ public class Main {
                     int idPerson = userInteract.AwaitPersonToDelete(scanner);
                     pessoaController.RemovePerson(pessoas,idPerson);
                 }
+                case 4->{
+                    String novoNome = userInteract.AwaitPersonNewName(scanner);
+                    int novaIdade = userInteract.AwaitPersonNewAge(scanner);
+                    int idPerson = userInteract.AwaitPersonToEdit(scanner);
+                    pessoaController.UpdatePerson(pessoas,idPerson,novoNome,novaIdade);
+                }
 
             }
         }
