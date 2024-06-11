@@ -18,4 +18,14 @@ public class PessoaController {
         lista.remove(id);
     }
 
+    public void UpdatePerson(List<Pessoa> lista, int id, String novoNome, int novaIdade){
+        if (id >= 0 && id < lista.size()) {
+            Pessoa pessoa = lista.get(id);
+            pessoa.nome = novoNome;
+            pessoa.idade = novaIdade;
+        } else {
+            System.out.println("ID inválido!");
+        }
+    }
+
 }

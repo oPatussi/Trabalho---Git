@@ -2,8 +2,8 @@ import java.util.List;
 
 public class Pessoa {
 
-    final String nome;
-    final int idade;
+    String nome;
+    int idade;
 
     public Pessoa(String nome, int idade) {
         this.nome = nome;
